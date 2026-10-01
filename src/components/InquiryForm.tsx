@@ -33,11 +33,11 @@ export function InquiryForm() {
 
   if (sent) {
     return (
-      <div className="rounded-2xl border border-teal-500/30 bg-teal-500/10 p-8 text-center">
+      <div className="rounded-2xl border border-brass/30 bg-brass/10 p-8 text-center">
         <p className="font-display text-xl text-navy-900">Your email draft is ready.</p>
-        <p className="mt-2 text-sm text-ink/70">
+        <p className="mt-2 text-sm text-muted">
           Send it from your mail app, or message us on{" "}
-          <a href={site.whatsapp.href} className="font-semibold text-teal-600">
+          <a href={site.whatsapp.href} className="font-semibold text-brass-600">
             WhatsApp
           </a>
           .
@@ -61,7 +61,7 @@ export function InquiryForm() {
           name="message"
           rows={5}
           required
-          className="rounded-xl border border-navy-800/10 bg-white px-4 py-3 outline-none ring-teal-500/40 focus:ring-2"
+          className="rounded-xl border border-line bg-white px-4 py-3 outline-none ring-brass/40 focus:ring-2"
           placeholder="Share sizes, material, quantity, drawing or sample notes."
         />
       </label>
@@ -90,7 +90,7 @@ function Field({
         name={name}
         type={type}
         required={required}
-        className="rounded-xl border border-navy-800/10 bg-white px-4 py-3 outline-none ring-teal-500/40 focus:ring-2"
+        className="rounded-xl border border-line bg-white px-4 py-3 outline-none ring-brass/40 focus:ring-2"
       />
     </label>
   );

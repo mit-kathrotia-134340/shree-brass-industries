@@ -27,8 +27,8 @@ export default function ProductsPage() {
             <div className="flex flex-col justify-center p-8 sm:p-10">
               <p className="eyebrow">0{i + 1} / 0{categories.length}</p>
               <h2 className="display mt-3 text-3xl">{cat.name}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-ink/70">{cat.description}</p>
-              <span className="mt-6 text-sm font-semibold text-teal-600">View range →</span>
+              <p className="mt-4 text-sm leading-relaxed text-muted">{cat.description}</p>
+              <span className="mt-6 text-sm font-semibold text-brass-600">View range →</span>
             </div>
           </Link>
         ))}

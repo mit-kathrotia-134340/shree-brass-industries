@@ -34,9 +34,9 @@ export default async function CategoryPage({ params }: Props) {
                 <div className="relative aspect-square bg-white">
                   <Image src={item.image} alt={item.name} fill className="object-contain p-2" />
                 </div>
-                <div className="border-t border-navy-800/5 p-4">
+                <div className="border-t border-line p-4">
                   <h2 className="font-display text-lg text-navy-900">{item.name}</h2>
-                  {item.spec && <p className="mt-1 text-xs leading-relaxed text-ink/60">{item.spec}</p>}
+                  {item.spec && <p className="mt-1 text-xs leading-relaxed text-muted">{item.spec}</p>}
                 </div>
               </article>
             ))}
@@ -48,7 +48,7 @@ export default async function CategoryPage({ params }: Props) {
           <dl className="mt-5 space-y-4 text-sm">
             {cat.specs.map((s) => (
               <div key={s.label}>
-                <dt className="text-[11px] uppercase tracking-[0.16em] text-teal-400">{s.label}</dt>
+                <dt className="text-[11px] uppercase tracking-[0.16em] text-brass-400">{s.label}</dt>
                 <dd className="mt-1 text-white/80">{s.value}</dd>
               </div>
             ))}

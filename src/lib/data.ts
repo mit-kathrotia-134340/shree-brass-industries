@@ -22,7 +22,7 @@ export const nav = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/products", label: "Products" },
-  { href: "/infrastructure", label: "Infrastructure" },
+  { href: "/infrastructure", label: "Capabilities" },
   { href: "/quality", label: "Quality" },
   { href: "/industries", label: "Industries" },
   { href: "/contact", label: "Contact" },

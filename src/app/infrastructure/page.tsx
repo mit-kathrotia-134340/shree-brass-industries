@@ -22,7 +22,7 @@ export default function InfrastructurePage() {
             </div>
             <div className="p-6">
               <h2 className="font-display text-2xl text-navy-900">{f.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-ink/70">{f.text}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{f.text}</p>
             </div>
           </article>
         ))}
@@ -30,7 +30,7 @@ export default function InfrastructurePage() {
 
       <section className="bg-navy-950 py-16 text-white">
         <div className="container-page">
-          <p className="eyebrow text-teal-400">Process</p>
+          <p className="eyebrow text-brass-400">Process</p>
           <h2 className="display mt-3 text-3xl text-white">Six stages from brass to dispatch</h2>
           <ol className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {processSteps.map((s) => (

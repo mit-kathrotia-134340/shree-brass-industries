@@ -22,7 +22,7 @@ export default function IndustriesPage() {
             </div>
             <div className="p-7">
               <h2 className="font-display text-2xl text-navy-900">{ind.name}</h2>
-              <p className="mt-3 text-sm leading-relaxed text-ink/70">{ind.text}</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted">{ind.text}</p>
             </div>
           </article>
         ))}

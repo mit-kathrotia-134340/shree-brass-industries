@@ -32,12 +32,12 @@ export default function QualityPage() {
               ["Valid through", site.iso.expiry],
             ].map(([k, v]) => (
               <div key={k}>
-                <dt className="text-xs uppercase tracking-[0.16em] text-teal-600">{k}</dt>
+                <dt className="text-xs uppercase tracking-[0.16em] text-brass-600">{k}</dt>
                 <dd className="mt-1 font-medium text-navy-900">{v}</dd>
               </div>
             ))}
           </dl>
-          <p className="mt-6 text-sm leading-relaxed text-ink/70">
+          <p className="mt-6 text-sm leading-relaxed text-muted">
             Scope: {site.iso.scope}, at {site.address.line1}, {site.address.line2}, {site.address.line3}.
           </p>
           <a href="/downloads/iso-9001-certificate.pdf" className="btn-dark mt-8">
@@ -51,7 +51,7 @@ export default function QualityPage() {
           <h2 className="display text-3xl">Inspection stages</h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {qualityChecks.map((item, i) => (
-              <div key={item} className="rounded-2xl border border-navy-800/10 p-6">
+              <div key={item} className="rounded-2xl border border-line p-6">
                 <p className="font-display text-2xl text-brass-500">{String(i + 1).padStart(2, "0")}</p>
                 <p className="mt-2 font-medium text-navy-900">{item}</p>
               </div>

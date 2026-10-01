@@ -3,41 +3,46 @@
 @tailwind utilities;
 
 :root {
-  --navy: #0b1426;
-  --teal: #14b8c8;
-  --brass: #c4a35a;
+  --navy: #0b1220;
+  --navy-dark: #08101d;
+  --cream: #f5f1e8;
+  --brass: #c9a45c;
+  --brass-light: #d8b875;
+  --muted: #68717d;
+  --line: #dcd7cc;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  @apply bg-paper text-ink antialiased;
+  @apply bg-cream text-muted antialiased;
 }
 
 ::selection {
-  background: #14b8c8;
-  color: #070d18;
+  background: #c9a45c;
+  color: #08101d;
 }
 
 .gold-line {
   height: 2px;
   width: 4.5rem;
-  background: linear-gradient(90deg, #c4a35a, #e8d5a3);
+  background: linear-gradient(90deg, #c9a45c, #d8b875);
 }
 
 @layer components {
   .container-page {
-    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-8;
   }
 
   .eyebrow {
-    @apply text-[11px] font-semibold uppercase tracking-[0.28em] text-teal-600;
+    @apply text-[11px] font-semibold uppercase tracking-[0.28em] text-brass-600;
   }
 
   .display {
-    @apply font-display font-semibold tracking-tight text-navy-900;
+    @apply font-sans font-bold tracking-tight text-navy-900;
   }
 
   .btn {
@@ -45,7 +50,7 @@ body {
   }
 
   .btn-primary {
-    @apply btn bg-teal-500 text-navy-950 hover:bg-teal-400;
+    @apply btn bg-brass text-navy-950 hover:bg-brass-400;
   }
 
   .btn-dark {
@@ -53,14 +58,26 @@ body {
   }
 
   .btn-ghost {
-    @apply btn border border-white/20 text-white hover:border-teal-400 hover:text-teal-400;
+    @apply btn border border-white/20 text-white hover:border-brass-400 hover:text-brass-400;
   }
 
   .btn-outline {
-    @apply btn border border-navy-800/15 text-navy-900 hover:border-navy-800 hover:bg-navy-900 hover:text-white;
+    @apply btn border border-line text-navy-900 hover:border-navy-900 hover:bg-navy-900 hover:text-white;
+  }
+
+  .btn-outline-light {
+    @apply btn rounded-lg border border-white/25 bg-transparent text-white hover:border-brass-400 hover:text-brass-400;
+  }
+
+  .btn-outline-navy {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-navy-900/20 bg-white px-5 py-2.5 text-sm font-semibold text-navy-900 transition hover:border-navy-900;
+  }
+
+  .btn-contact {
+    @apply inline-flex items-center gap-3 rounded-lg border border-line bg-white px-5 py-3.5 text-sm font-semibold text-navy-900 shadow-sm transition hover:border-brass-500;
   }
 
   .card {
-    @apply overflow-hidden rounded-2xl bg-white shadow-lift;
+    @apply overflow-hidden rounded-2xl border border-line bg-white shadow-lift;
   }
 }

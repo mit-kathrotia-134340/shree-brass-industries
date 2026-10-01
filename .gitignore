@@ -5,3 +5,5 @@ out
 *.log
 extracted
 source-docs
+.vercel
+.mockup-slices
